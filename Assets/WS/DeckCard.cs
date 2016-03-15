@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 namespace WS
 {
-    public class OnStageChara
+    public class DeckCard
     {
         public int deckNo;
-        public Chara chara;
-        public int Soul;
-        public int Power;
+        public Card card;
+        public int Soul = 0;
+        public int Power = 0;
         public Position position;
 
         public FrontBack FrontBack()
@@ -56,7 +56,6 @@ namespace WS
         MarkerFrontRight,
         MarkerBackLeft,
         MarkerBackRight,
-
     }
 
     public enum FrontBack
