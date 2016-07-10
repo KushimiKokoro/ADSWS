@@ -4,15 +4,21 @@ namespace WS
     public class Card
     {
         public Side side;
-        public string NeoStandard;
-        public string No;
-        public Reality reality;
+        public string neoStandard;
+        public string no;
+        public Rarity rarity;
 
-        public string Name;
+        public string name;
         public Color color;
-        public int Lv;
-        public int Cost;
+        public int lv;
+        public int cost;
         public Trigger trigger;
+
+        public Card(Side side, string neoStandard, string no, Rarity reality, string name, Color color, int lv, int cost, Trigger trigger)
+        {
+
+        }
+
     }
 
     public enum Trigger
@@ -43,7 +49,7 @@ namespace WS
         Black,
     }
 
-    public enum Reality
+    public enum Rarity
     {
         PR,
         C,
